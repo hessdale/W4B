@@ -1,0 +1,74 @@
+html {
+    font-family: PT sans;
+}
+
+header p {
+    color: white;
+    font-size: 30px;
+
+}
+
+header nav {
+    width: 25px;
+    height: 25px;
+}
+
+header {
+    display: grid;
+    background-color: #0084FF;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+main {
+    display: grid;
+}
+
+main article {
+    border-radius: 15px;
+}
+
+#app_article {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+    align-items: center;
+}
+
+#Appstore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 25px;
+    padding-right: 30px;
+    padding-top: -10px;
+}
+
+
+#Logo {
+    justify-self: left;
+    align-self: center;
+}
+
+.light_blue {
+    color: #B8DDFF;
+}
+
+.dark_blue {
+    color: #0084FF;
+}
+
+.white {
+    color: white;
+}
+
+.light_blueback {
+    background-color: #B8DDFF;
+}
+
+.dark_blueback {
+    background-color: #0084FF;
+}
