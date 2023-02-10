@@ -20,6 +20,7 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-items: end;
     align-items: center;
+    margin: -10px;
     margin-bottom: 30px;
 }
 
@@ -28,8 +29,8 @@ main article {
 
 }
 
-main article {
-    border-radius: 15px;
+main>#app_article {
+    border-radius: 20px;
 }
 
 #app_article {
@@ -50,17 +51,105 @@ main article {
     margin-left: 30px;
 }
 
-#icon_article {
+#icon_article>div {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-
+    border-radius: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 #Logo {
     justify-self: left;
     align-self: center;
+}
+#icon_article>div>p {
+max-width: 80%;
+}
+
+#planning_article {
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;
+align-items: center;
+padding-bottom: 50px;
+margin-top: 70px;
+margin-left: -8px;
+margin-right: -8px;
+}
+
+#planning_article>section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: left;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+#app_dev {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 65%;
+    border-radius: 35px;
+   padding: 10px;
+}
+
+#small_arrow {
+    background-color: #9693E6;
+    opacity: .75;
+    border-radius: 50%;
+}
+
+
+
+
+
+.bold {
+    font-weight: bolder;
+}
+
+.dark_green {
+    color: #54C788;
+}
+
+.light_green_back {
+    background-color: #CAF0DB;
+}
+
+.dark_red {
+    color: #FF8A8A;
+}
+
+.light_red_back {
+    background-color: #FFD2D2;
+}
+
+.dark_yellow {
+    color: #FFC166;
+}
+
+.light_yellow_back {
+    background-color: #FFE7C4;
+}
+
+.dark_purple {
+    color: #9693E6;
+}
+
+.dark_purple_back {
+    background-color: #9693E6;
+}
+
+.light_purple_back {
+    background-color: #D5D4F5;
+}
+
+.dark_grey {
+    color: #333333;
 }
 
 .light_blue {
@@ -75,10 +164,17 @@ main article {
     color: white;
 }
 
-.light_blueback {
+.light_blue_back {
     background-color: #B8DDFF;
 }
 
-.dark_blueback {
+.dark_blue_back {
     background-color: #0084FF;
+}
+
+.white_back {
+    background-color: white;
+}
+.darker_purple {
+    color: #464468;
 }
