@@ -1,5 +1,6 @@
 html {
     font-family: PT sans;
+    display: grid;
 }
 
 header p {
@@ -22,8 +23,9 @@ header {
     margin-bottom: 30px;
 }
 
-main {
+main article {
     display: grid;
+
 }
 
 main article {
@@ -37,6 +39,7 @@ main article {
     align-items: center;
 }
 
+
 #Appstore {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,9 +47,16 @@ main article {
     align-items: center;
     border-radius: 25px;
     padding-right: 30px;
-    padding-top: -10px;
+    margin-left: 30px;
 }
 
+#icon_article {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
 
 #Logo {
     justify-self: left;
