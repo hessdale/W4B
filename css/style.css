@@ -12,6 +12,7 @@ header p {
 header nav {
     width: 25px;
     height: 25px;
+    margin-right: 10px;
 }
 
 header {
@@ -20,8 +21,18 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-items: end;
     align-items: center;
-    margin: -10px;
+    margin: -8px;
     margin-bottom: 50px;
+}
+
+#demo_app {
+    text-align: left;
+    margin-left: 25px
+}
+
+#demo_app>p {
+    line-height: 30px;
+
 }
 
 main article {
@@ -70,11 +81,15 @@ main>#app_article {
     border-radius: 25px;
     margin-top: 20px;
     padding-top: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 #Logo {
     justify-self: left;
     align-self: center;
+    margin-right: 0px;
+    margin-left: 5px;
 }
 
 #icon_article>div>p {
@@ -122,6 +137,9 @@ main>#app_article {
     justify-items: center;
     align-items: center;
     max-width: 80%;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 50px;
 }
 
 
@@ -246,6 +264,7 @@ main>#app_article {
 #boss_quote {
     display: grid;
     grid-template-columns: 1fr;
+    margin-right: -140px;
 }
 
 #left_quote>img {
@@ -263,6 +282,7 @@ main>#app_article {
     margin-right: -8px;
     padding-top: 50px;
     margin-top: 20px;
+    padding-bottom: 50px;
 }
 
 #started_button {
