@@ -3,6 +3,7 @@ html {
     display: grid;
 }
 
+
 header p {
     color: white;
     font-size: 30px;
@@ -46,9 +47,10 @@ main>#app_article {
 
 #app_article {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: left;
     align-items: center;
+
 }
 
 
@@ -82,7 +84,7 @@ main>#app_article {
     margin-top: 20px;
     padding-top: 20px;
     margin-left: -8px;
-    margin-right: -8px;
+    margin-right: -px;
 }
 
 #Logo {
@@ -422,4 +424,68 @@ footer {
 
 .darker_purple {
     color: #464468;
+}
+
+body>main {
+    display: grid;
+    max-width: 375px;
+}
+
+
+@media only screen and (min-width:700px) {
+    body>main {
+        max-width: 700px;
+    }
+
+    #tablet_2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #tablet_1 {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #app_article {
+        grid-template-columns: 2fr;
+    }
+
+    #icon_article>article {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #planning_article img {
+        width: 500px;
+    }
+
+    #small_arrow img {
+        width: 50px;
+    }
+
+    #testimonials>article {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #working_benefits>article {
+        grid-template-columns: 1fr;
+    }
+
+    #tablet_3 {
+        grid-template-columns: 1fr;
+    }
+
+    #working_benefits {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #benefits_title {
+        grid-template-columns: 1fr;
+    }
+
+    #tablet_4 {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #about_us {
+        grid-template-columns: 1fr;
+    }
 }
