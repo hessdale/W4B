@@ -113,13 +113,7 @@ main>#app_article {
     max-width: 80%;
 }
 
-#working_benefits>article {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: start;
-    align-items: center;
-    border-radius: 25px;
-}
+
 
 #testimonials article {
     display: grid;
@@ -130,21 +124,50 @@ main>#app_article {
     margin: 25px;
     padding-top: 20px;
 }
+#working_benefits {
+    background-color: #9693E6;
+    margin-left: -8px;
+    margin-right: -8px;
+}
 
+#working_benefits>article {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
 
+#more_button {
+    border-radius: 25px;
+padding-left: 40px;
+padding-right: 40px;
+margin-top: 10px;
 
+}
 
-.head_shot {
-    border-radius: 50%;
-    object-fit: none;
-    overflow: auto;
-
+#bossman {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
 }
 
 
 
 
 
+
+.head_shot {
+    display: grid;
+    margin-right: 170px;
+    border-radius: 50%;
+    object-fit: none;
+    overflow: hidden;
+
+}
 
 .bold {
     font-weight: bolder;
