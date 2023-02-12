@@ -22,13 +22,15 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-items: end;
     align-items: center;
-    margin: -8px;
+    margin: -7px;
     margin-bottom: 50px;
 }
 
 #demo_app {
     text-align: left;
-    margin-left: 25px
+    margin-left: 25px;
+    justify-items: center;
+    align-items: center;
 }
 
 #demo_app>p {
@@ -38,19 +40,17 @@ header {
 
 main article {
     display: grid;
-
+    width: 375pxpx;
 }
 
-main>#app_article {
-    border-radius: 20px;
-}
 
 #app_article {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     justify-items: left;
     align-items: center;
-
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -60,8 +60,10 @@ main>#app_article {
     justify-items: center;
     align-items: center;
     border-radius: 25px;
-    padding-right: 30px;
-    margin-left: 30px;
+
+    margin-left: -5px;
+    margin-right: 125px;
+    padding-right: 65px;
 }
 
 #Linkedin {
@@ -74,6 +76,19 @@ main>#app_article {
     padding-right: 4px;
 }
 
+body>main {
+    width: 375px;
+}
+
+#icon_article {
+    border-radius: 25px;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: -7px;
+    margin-right: -7px;
+    justify-items: center;
+    align-items: center;
+}
 
 #icon_article>div {
     display: grid;
@@ -83,8 +98,13 @@ main>#app_article {
     border-radius: 25px;
     margin-top: 20px;
     padding-top: 20px;
-    margin-left: -8px;
-    margin-right: -px;
+    margin-left: -7px;
+    margin-right: -7px;
+    text-align: center;
+}
+
+#icon_article>p {
+    text-align: center;
 }
 
 #Logo {
@@ -204,7 +224,8 @@ main>#app_article {
 
 #titlepush {
     margin-bottom: 60px;
-    margin-top: 50px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 #working_benefits>h1 {
@@ -217,6 +238,7 @@ main>#app_article {
     margin-right: -8px;
     margin-bottom: 20px;
     padding-bottom: 40px;
+    padding-top: 30px;
 }
 
 #working_benefits>article {
@@ -239,10 +261,19 @@ main>#app_article {
 
 }
 
+#more_button_limit {
+    margin-left: -10px;
+    border-radius: 20px;
+    width: 120px;
+    justify-items: start;
+    align-items: start;
+    text-align: center;
+}
+
 #more_button {
     border-radius: 30px;
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -426,27 +457,48 @@ footer {
     color: #464468;
 }
 
-body>main {
-    display: grid;
-    max-width: 375px;
-}
 
 
 @media only screen and (min-width:700px) {
     body>main {
-        max-width: 700px;
+        width: 700px;
     }
 
     #tablet_2 {
         grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 0px;
+        width: 670px;
+        justify-items: center;
+        align-items: center;
     }
+
+    #tablet_2>article {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 12px;
+        padding-bottom: 50px;
+    }
+
+
 
     #tablet_1 {
         grid-template-columns: 2fr 1fr;
+        justify-items: start;
+        max-width: 700px;
+        margin-left: -7px;
     }
 
     #app_article {
         grid-template-columns: 2fr;
+        width: 95%;
+    }
+
+    #icon_article>div {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: -48px;
+        padding-bottom: 35px;
     }
 
     #icon_article>article {
@@ -461,12 +513,66 @@ body>main {
         width: 50px;
     }
 
+    #testimonials>div {
+        padding-left: 70px;
+    }
+
+    #testimonials h2 {
+        margin: 0px;
+        margin-left: -30px;
+        margin-top: 120px;
+        position: absolute;
+    }
+
+    #testimonials p {
+        width: 90%;
+        padding-top: 10px;
+        padding-left: 10px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    #leftquote1,
+    #leftquote2,
+    #leftquote3 {
+        order: 2;
+        margin-bottom: 40px;
+        margin-left: -183px;
+        position: absolute;
+    }
+
+    #rightquote1,
+    #rightquote2,
+    #rightquote3 {
+
+        margin-bottom: -107px;
+        margin-left: 387px;
+        position: absolute;
+    }
+
+    #rightquote1 {
+        margin-left: 430px;
+    }
+
     #testimonials>article {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        padding-bottom: 10px;
     }
 
     #working_benefits>article {
         grid-template-columns: 1fr;
+    }
+
+    #desktop_1>h1 {
+        font-size: 50px;
+    }
+
+    #app_dev {
+        width: 600px;
+    }
+
+    #titlepush {
+        grid-column: span 2;
     }
 
     #tablet_3 {
@@ -474,7 +580,18 @@ body>main {
     }
 
     #working_benefits {
+
+
         grid-template-columns: 1fr 1fr;
+    }
+
+    #working_benefits article {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #more_button {
+        width: 120px;
     }
 
     #benefits_title {
@@ -483,9 +600,154 @@ body>main {
 
     #tablet_4 {
         grid-template-columns: 2fr 1fr;
+        max-width: 670px;
     }
+
 
     #about_us {
         grid-template-columns: 1fr;
+    }
+
+    #boss_quote {
+        max-width: 100%;
+
+    }
+
+
+
+    #bossman>div.head_shot {
+        position: absolute;
+    }
+
+    #left_quote {
+        padding-left: 220px;
+    }
+
+    #bossman {
+        grid-template-columns: 1fr;
+    }
+
+    #get_started {
+        width: 670px;
+    }
+
+    #testemonials {
+        width: 670px;
+    }
+
+}
+
+@media only screen and (min-width:1100px) {
+    body>main {
+        width: 1100px;
+    }
+
+    #tablet_1 {
+        grid-template-columns: 2fr 1fr;
+        justify-items: start;
+        max-width: 1100px;
+
+    }
+
+
+
+    #Appstore {
+        width: 300px;
+    }
+
+    #tablet_2 {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 0px;
+        width: 1100px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #planning_article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #app_dev {
+        grid-row: span 2;
+        margin-top: 350px;
+    }
+
+    #planning_article img {
+        width: 300px;
+    }
+
+    #desktop_1 {
+        order: 2;
+    }
+
+    #small_arrow img {
+        width: 50px;
+    }
+
+    #testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    #testimonials>article {
+        grid-template-columns: 1fr 2fr;
+        padding-bottom: 10px;
+        width: 900px;
+        margin-left: 100px;
+    }
+
+    #titlepush {
+        grid-column: span 3;
+    }
+
+    #tablet_4 {
+        grid-template-columns: 2fr 1fr;
+        max-width: 1100px;
+    }
+
+    #testimonials>div {
+        max-width: 1100px;
+    }
+
+    #leftquote1,
+    #leftquote2,
+    #leftquote3 {
+        order: 2;
+        margin-bottom: 40px;
+        margin-left: -240px;
+        position: absolute;
+    }
+
+    #rightquote1 {
+
+        margin-bottom: -107px;
+        margin-left: 675px;
+        position: absolute;
+    }
+
+    #rightquote2 {
+
+        margin-bottom: -107px;
+        margin-left: 240px;
+        position: absolute;
+    }
+
+    #rightquote3 {
+
+        margin-bottom: -107px;
+        margin-left: 675px;
+        position: absolute;
+    }
+
+    #working_benefits {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #get_started {
+        width: 1100px;
+    }
+
+    footer p {
+        text-align: center;
+
     }
 }
